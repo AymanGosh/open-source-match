@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router';
 
 export function Hero() {
   return (
@@ -15,10 +16,10 @@ export function Hero() {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button className="bg-primary text-primary-foreground px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors flex items-center gap-2 group">
+          <Link to="/discover" className="bg-primary text-primary-foreground px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors flex items-center gap-2 group">
             Start Contributing
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </button>
+          </Link>
           <button className="border border-border px-8 py-3 rounded-lg hover:bg-accent transition-colors">
             See How It Works
           </button>
